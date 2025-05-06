@@ -1,0 +1,216 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+
+[class*="-container"] {
+   max-width: 1130px;
+   margin: 0 auto;
+   font-size: 0px;
+}
+
+.header {
+   padding-top: 20px;
+   margin-bottom: 50px;
+}
+
+.header-container img {
+   width: 106px;
+   height: 37px;
+   margin-right: 39px;
+
+}
+
+.header-navigation {
+   display: inline-block;
+   vertical-align: middle;
+
+}
+
+.header-item {
+   font-family: "Inter", sans-serif;
+   font-size: 15px;
+   line-height: 24px;
+   letter-spacing: 0.2px;
+   color: #33383F;
+   display: inline-block;
+   vertical-align: middle;
+   margin-right: 24px;
+}
+
+.header-buttons {
+   font-family: "Inter", sans-serif;
+   font-size: 15px;
+   line-height: 24px;
+   letter-spacing: 0.2px;
+   color: #0070A0;
+   display: inline-block;
+   vertical-align: middle;
+
+}
+
+.header-button {
+   display: inline-block;
+   vertical-align: middle;
+   margin-right: 32px;
+}
+
+.header-buttonbackgraund {
+   background-color: #0070A0;
+   padding: 6px 20px 6px 20px;
+   color: #FFFFFF;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.features-title {
+   max-width: 650px;
+   margin-bottom: 50px;
+}
+
+.features-title h1 {
+   font-family: "Fraunces", sans-serif;
+   font-size: 42px;
+   line-height: 50px;
+   letter-spacing: 0.2px;
+   color: #1F1F1F;
+   margin-bottom: 18px;
+}
+
+.features-title p {
+   font-family: "Inter", sans-serif;
+   font-size: 18px;
+   line-height: 27px;
+   letter-spacing: 0.2px;
+   color: #1F1F1F;
+}
+
+.features-columns {
+   margin-left: -32px;
+   margin-right: -32px;
+}
+
+.features-column {
+   display: inline-block;
+   vertical-align: top;
+   max-width: 230px;
+   margin-left: 32px;
+   margin-right: 32px;
+}
+
+.features-column img {
+   max-width: 55px;
+   max-height: 55px;
+   margin-bottom: 9px;
+}
+
+.features-column h2 {
+   font-family: "Fraunces", sans-serif;
+   font-size: 25px;
+   line-height: 31px;
+   letter-spacing: 0.2px;
+   color: #1F1F1F;
+   margin-bottom: 9px;
+}
+
+.features-column p {
+   color: #1F1F1F;
+   font-family: "Inter", sans-serif;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: 0.2px;
+}
+
+
+.features {
+   margin-bottom: 50px;
+}
+
+.blog {
+   background-color: #F7F9FA;
+   margin-bottom: 50px;
+}
+
+.blog-container h2 {
+   font-family: "Fraunces", sans-serif;
+   font-size: 42px;
+   line-height: 50px;
+   letter-spacing: 0.2px;
+   color: #1F1F1F;
+   display: inline-block;
+   margin-right: 423px;
+   margin-bottom: 50px;
+
+}
+
+.blog-container a {
+   font-family: "Inter", sans-serif;
+   font-size: 17px;
+   line-height: 27px;
+   letter-spacing: 0.2px;
+   text-align: center;
+   color: #0070A0;
+   vertical-align: middle;
+}
+
+.blog-item img {
+   max-width: 355px;
+   max-height: 238px;
+}
+
+.blog-items {
+   margin-left: -16px;
+   margin-right: -16px;
+}
+
+.blog-item {
+   display: inline-block;
+   max-width: 350px;
+   vertical-align: top;
+   margin-left: 16px;
+   margin-right: 16px;
+}
+
+.blog-item a {
+   font-family: "Inter", sans-serif;
+   font-size: 12px;
+   line-height: 16px;
+   letter-spacing: 0.4px;
+   text-align: center;
+   color: #2C90C9;
+   background-color: #E6F7FF;
+   padding: 2px 12px 2px 12px;
+   margin-bottom: 12px;
+
+}
+
+.blog-item h3 {
+   font-family: "Fraunsec", sans-serif;
+   font-size: 25px;
+   line-height: 31px;
+   letter-spacing: 0.2px;
+   color: #1F1F1F;
+   margin-bottom: 11px;
+
+}
+
+.blog-item p {
+   font-family: "Inter", sans-serif;
+   font-size: 14px;
+   line-height: 20px;
+   letter-spacing: 0.2px;
+   color: #1F1F1F;
+   margin-bottom: 13px;
+
+}
+
+.blog-itemcontent {
+   padding: 27px 0 0 24px;
+}
+
+.footer {
+   font-family: "beer money", sans-serif;
+   font-size: 25px;
+   text-align: center;
+   vertical-align: bottom;
+
+}
