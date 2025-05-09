@@ -1,0 +1,7 @@
+@font-face {
+   font-family: "beer money";
+   src: url("../fonts/beer\ money.woff2") format("woff2");
+   font-display: swap;
+   font-weight: 400;
+   font-style: oblique;
+}

@@ -1,0 +1,219 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+
+[class*="-container"] {
+   max-width: 1160px;
+   margin: 0 auto;
+   font-size: 0px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+header {
+   background: radial-gradient(circle, rgba(128, 43, 43, 1) 0%, rgba(2, 0, 36, 1) 14%, rgba(9, 9, 121, 1) 49%, rgba(0, 212, 255, 1) 73%);
+   margin-bottom: 50px;
+}
+
+.header-content {
+   font-family: "Inter", sans-serif;
+   color: rgb(0, 255, 200);
+   font-size: 20px;
+   line-height: 20px;
+   text-align: center;
+   padding: 20px;
+}
+
+.features-container {
+   max-width: 678px;
+   margin: 0 auto;
+   font-size: 0px;
+}
+
+.features-content h2 {
+   font-family: "AnyBody", sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+   color: #1A1A1A;
+   margin-bottom: 32px;
+   padding: 16px;
+   box-shadow: inset 0 -2px 0 0 #20b526;
+   text-align: right;
+}
+
+.features-content p {
+   font-family: "AnyBody", sans-serif;
+   font-size: 14px;
+   line-height: 20px;
+   color: #808080;
+   margin-bottom: 40px;
+}
+
+.features-list {
+   font-family: "Poppins", sans-serif;
+   font-size: 14px;
+   line-height: 20px;
+   color: #808080;
+   margin-bottom: 20px;
+
+}
+
+.features-item {
+   background: url("../img/check.svg") no-repeat left top / 20px;
+   padding-left: 28px;
+   padding-right: 28px;
+   margin-bottom: 14px;
+
+}
+
+.features-undertext {
+   font-family: "AnyBody", sans-serif;
+   font-size: 14px;
+   line-height: 42px;
+   color: #808080;
+}
+
+.features {
+   margin-bottom: 50px;
+}
+
+.about {
+   margin-bottom: 50px;
+   background: #302c42
+}
+
+.about-inner {
+   background: url("../img/vector\ 1.svg") -40px 15px no-repeat,
+      url("../img/vector\ 2.svg") -140px 216px no-repeat;
+
+}
+
+.about-container {
+   max-width: 1320px;
+   margin: 0 auto;
+   font-size: 0px;
+   padding: 25px;
+}
+
+
+.about-image {
+   display: inline-block;
+   margin-right: 108px;
+   vertical-align: top;
+}
+
+.about-image img {
+   width: 524px;
+   height: 557px;
+   border-radius: 240px 100px;
+   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.about-content {
+   font-family: "Montserrat", sans-serif;
+   font-size: 16px;
+   color: #FFFFFF;
+   display: inline-block;
+   max-width: 630px;
+}
+
+.about-content p {
+   line-height: 22px;
+   margin-bottom: 28px;
+}
+
+.about-content h2 {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 700;
+   font-size: 36px;
+   margin-bottom: 5px;
+}
+
+.about-content h3 {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 300;
+   font-size: 36px;
+   color: rgba(255, 255, 255, 0.95);
+   margin-bottom: 42px;
+}
+
+.about-content a {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 700;
+   font-size: 12px;
+   color: #343045;
+   text-align: center;
+   border-radius: 40px;
+   min-height: 48px;
+   padding: 17px 47px 16px 39px;
+   background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+}
+
+.contacts {
+   margin-bottom: 50px;
+}
+
+.contacts-container {
+   max-width: 1320px;
+   margin: 0 auto;
+   font-size: 0px;
+   padding: 25px;
+}
+
+.contacts-image {
+   display: inline-block;
+   vertical-align: top;
+   margin-right: 20px;
+}
+
+
+.contacts-items {
+   border-radius: 90px;
+   box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
+   background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211e2e 100%);
+   padding: 26px 80px 24px 39px;
+}
+
+.contacts-item h2 {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 29px;
+   margin-bottom: 10px;
+   text-transform: capitalize;
+   color: #FFFFFF;
+}
+
+.contacts-item p {
+   font-family: "Montserrat", sans-serif;
+   font-size: 14px;
+   line-height: 17px;
+   text-transform: capitalize;
+   color: #FFFFFF;
+}
+
+.contacts-item {
+   display: inline-block;
+   border-right: 1px solid rgba(192, 183, 232, 0.33);
+   min-height: 116px;
+   padding-top: 27px;
+   padding-right: 42px;
+   padding-bottom: 33px;
+   margin-right: 40px;
+   max-width: 405px;
+}
+
+.contacts-text {
+   display: inline-block;
+}
+
+.last-item {
+   display: inline-block;
+   border: none;
+   margin-right: 0;
+}
