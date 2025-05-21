@@ -1,0 +1,365 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+
+[class*="-container"] {
+   max-width: 1231px;
+   margin: 0 auto;
+   font-size: 0px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.header {
+   background: radial-gradient(circle, rgba(128, 43, 43, 1) 0%, rgba(2, 0, 36, 1) 14%, rgba(9, 9, 121, 1) 49%, rgba(0, 212, 255, 1) 73%);
+   margin-bottom: 50px;
+   padding-top: 25px;
+   padding-bottom: 25px;
+}
+
+.header-content {
+   font-family: "Inter", sans-serif;
+   color: #000000;
+   font-size: 20px;
+   line-height: 20px;
+   text-align: center;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.header-content li {
+   display: inline-block;
+   border: 5px solid rgb(140, 0, 255);
+   padding: 5px;
+   border-radius: 50px;
+   background-color: rgb(145, 255, 0);
+}
+
+.header-content li:not(:last-child) {
+   margin-right: 20px;
+}
+
+.header-content li:hover:first-child {
+   color: red;
+}
+
+.header-content li:active:nth-child(2) {
+   color: rgb(255, 0, 242);
+}
+
+.header-content li:visited:nth-child(3) {
+   color: yellow;
+}
+
+.focus:focus {
+   background-color: blueviolet;
+}
+
+.header-content li:nth-child(6) {
+   visibility: hidden;
+}
+
+.header-content li:target:nth-child(6) {
+   visibility: visible;
+}
+
+
+.cards {
+   background-color: #412672;
+}
+
+.cards-container {
+   max-width: 1231px;
+   margin: 0 auto;
+   font-size: 0px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.cards-content {
+   padding-top: 61px;
+   padding-bottom: 102px;
+}
+
+.cards-description {
+   font-family: "Inter", sans-serif;
+   font-size: 38px;
+   line-height: 38px;
+   color: #ffffff;
+   max-width: 505px;
+}
+
+.cards-description h2 {
+   font-family: "Inter", sans-serif;
+   font-size: 38px;
+   font-weight: 700;
+   color: #ffffff;
+   margin-bottom: 31px;
+}
+
+.card {
+   max-width: 387px;
+   padding: 20px;
+   background: #ffffff;
+   display: inline-block;
+   vertical-align: top;
+}
+
+
+
+.card:not(:last-child) {
+   margin-right: 20px;
+}
+
+.card:hover {
+   box-shadow: 0 15px 34px 0 rgba(0, 0, 0, 0.1), 0 62px 62px 0 rgba(0, 0, 0, 0.09), 0 138px 83px 0 rgba(0, 0, 0, 0.05), 0 246px 98px 0 rgba(0, 0, 0, 0.01), 0 384px 108px 0 rgba(0, 0, 0, 0);
+   background: #ffbe48;
+}
+
+
+.card-image {
+   width: 100%;
+   margin-bottom: 16px;
+   display: inline-block;
+}
+
+.card-image img {
+   max-width: 347px;
+   max-height: 266px;
+}
+
+.card>*:not(:last-child) {
+   margin-bottom: 16px;
+}
+
+.card h2 {
+   font-family: "Inter", sans-serif;
+   font-weight: 600;
+   font-size: 22px;
+   color: #000000;
+}
+
+
+.card p {
+   font-family: "Inter", sans-serif;
+   font-size: 15px;
+   line-height: 19px;
+   color: #4f4f4f;
+   min-height: 76px;
+}
+
+.card a {
+   font-family: "Inter", sans-serif;
+   font-size: 15px;
+   line-height: 19px;
+   color: #fe3f3f;
+}
+
+.card a:hover {
+   text-decoration: underline;
+}
+
+.faculty-container {
+   max-width: 548px;
+   margin: 0 auto;
+   font-size: 0px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.faculty {
+   margin-bottom: 100px;
+}
+
+
+.faculty-content>*:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+.faculty-description>*:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+.faculty-description span {
+   font-weight: 700;
+}
+
+.faculty-content {
+   padding-top: 153px;
+   padding-bottom: 137px;
+}
+
+.faculty-description h2 {
+   font-family: "Inter", sans-serif;
+   font-size: 34px;
+   line-height: 1.1;
+   color: #412672;
+}
+
+.faculty-description p {
+   font-family: "Inter", sans-serif;
+   font-size: 22px;
+   line-height: 1.1;
+   color: #412672;
+}
+
+.faculty-list {
+   font-family: "Inter", sans-serif;
+   font-size: 20px;
+   line-height: 1.2;
+   color: #4f4f4f;
+}
+
+.faculty-list ul li {
+   padding-left: 45px;
+}
+
+.faculty-list ul li:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+.faculty-list ul li::before {
+   content: " ";
+   margin-left: -45px;
+   margin-right: 15px;
+   vertical-align: middle;
+   width: 30px;
+   height: 30px;
+   background: url(../img/vector.svg) 0 0 no-repeat;
+}
+
+.game-container {
+   max-width: 1330px;
+   margin: 0 auto;
+   font-size: 0px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.game {
+   background: url(../img/gamebac.webp) center center / 100%;
+   margin-bottom: 100px;
+   height: 1100px;
+}
+
+.game-body {
+   padding-top: 200px;
+   padding-left: 100px;
+}
+
+.game-container h2 {
+   font-family: "Inter", sans-serif;
+   font-size: 50px;
+   color: #ff0000;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.block-0 {
+   font-family: "Inter", sans-serif;
+   font-size: 30px;
+   color: #000000;
+   border: 4px solid rgb(0, 255, 213);
+   background: white;
+   text-align: center;
+   max-width: 100px;
+   text-transform: uppercase;
+   margin-left: -25px;
+}
+
+
+.block-1 {
+   display: inline-block;
+   background-color: red;
+   width: 40px;
+   height: 300px;
+   vertical-align: top;
+}
+
+.block-2 {
+   display: inline-block;
+   background-color: red;
+   width: 150px;
+   height: 20px;
+   vertical-align: bottom;
+}
+
+.block-3 {
+   display: inline-block;
+   background-color: red;
+   width: 15px;
+   height: 300px;
+   vertical-align: bottom;
+}
+
+.block-4 {
+   display: inline-block;
+   background-color: red;
+   width: 150px;
+   height: 20px;
+   vertical-align: top;
+
+}
+
+.block-5 {
+   display: inline-block;
+   background-color: red;
+   width: 15px;
+   height: 289px;
+   vertical-align: top;
+}
+
+.block-6 {
+   display: inline-block;
+   background-color: red;
+   width: 400px;
+   height: 16px;
+   vertical-align: bottom;
+   margin-bottom: 11px;
+}
+
+.block-7 {
+   font-family: "Inter", sans-serif;
+   font-size: 30px;
+   color: #000000;
+   border: 4px solid rgb(0, 255, 213);
+   background: white;
+   text-align: center;
+   max-width: 100px;
+   text-transform: uppercase;
+   display: inline-block;
+   vertical-align: bottom;
+}
+
+[class*="block-"]:hover {
+   background-color: rgb(41, 227, 252);
+   cursor: crosshair;
+}
+
+[class*="block-"]:not(.block-0) {
+   visibility: hidden;
+}
+
+.game-body>*:hover {
+   visibility: visible;
+}
+
+.game-body>*:hover+* {
+   visibility: visible;
+}
+
+.footer-content {
+   background: radial-gradient(circle, rgb(218, 91, 91) 0%, rgb(12, 102, 114) 14%, rgb(8, 152, 209) 49%, rgb(12, 207, 77) 73%);
+   padding-top: 25px;
+   padding-bottom: 25px;
+   color: black;
+   font-size: 20px;
+   text-align: center;
+   text-transform: uppercase;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
