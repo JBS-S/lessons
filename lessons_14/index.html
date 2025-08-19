@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.css">
+      <link
+         href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600"
+         rel="stylesheet" />
+      <title>Lesson 14</title>
+   </head>
+   <body>
+      <div class="wrapper">
+         <header class="header">
+            header
+         </header>
+         <main class="page">
+            <section class="billing-information">
+               <div class="billing-information__container">
+                  <form class="billing-information__form"
+                     action="#" method="get" enctype="multipart/form-data">
+                     <div class="billing-information__body">
+                        <h1 class="billing-information__title title">
+                           Billing Information
+                        </h1>
+                        <div class="billing-information__items">
+                           <div class="billing-information__item">
+                              <label class="billing-information__label"
+                                 for="first-name">
+                                 First name
+                              </label>
+                              <input class="billing-information__input"
+                                 type="text" placeholder="Your first name"
+                                 name="form[]" autocomplete="off"
+                                 id="first-name" required>
+                           </div>
+                           <div class="billing-information__item">
+                              <label class="billing-information__label"
+                                 for="last-name">
+                                 Last name
+                              </label>
+                              <input class="billing-information__input"
+                                 type="text" placeholder="Your last name"
+                                 name="form[]" autocomplete="off"
+                                 id="last-name" required>
+                           </div>
+                           <div class="billing-information__item">
+                              <label class="billing-information__label"
+                                 for="company-name">
+                                 Company Name <span>(optional)</span>
+                              </label>
+                              <input class="billing-information__input"
+                                 type="text" placeholder="Company name"
+                                 name="form[]" autocomplete="off"
+                                 id="company-name">
+                           </div>
+                        </div>
+                        <div class="billing-information__items">
+                           <div class="billing-information__item">
+                              <label class="billing-information__label"
+                                 for="address">
+                                 Street Address
+                              </label>
+                              <input
+                                 class="billing-information__input"
+                                 type="text" placeholder="Email"
+                                 name="form[]" autocomplete="on"
+                                 id="address" required>
+                           </div>
+                        </div>
+                        <div class="billing-information__items">
+                           <div class="billing-information__item">
+                              <label class="billing-information__label"
+                                 for="country">
+                                 Country / Region
+                              </label>
+                              <select class="billing-information__select"
+                                 name="form[]" id="country" required>
+                                 <option selected value>Select</option>
+                                 <option value="country-1">Ukraine</option>
+                                 <option value="country-2">
+                                    United State of America</option>
+                              </select>
+                           </div>
+                           <div class="billing-information__item">
+                              <label class="billing-information__label"
+                                 for="states">
+                                 States
+                              </label>
+                              <select class="billing-information__select"
+                                 required
+                                 name="form[]" id="states">
+                                 <option selected value>Select</option>
+                                 <option value="states-1">Kyiv</option>
+                                 <option value="states-2">Odessa</option>
+                                 <option value="states-3">Lviv</option>
+                                 <option value="states-4">Dnipro</option>
+                                 <option value="states-5">Florida</option>
+                                 <option value="states-6">Colorado</option>
+                                 <option value="states-7">California</option>
+                                 <option value="states-8">Arkansas</option>
+                              </select>
+                           </div>
+                           <div class="billing-information__item">
+                              <label class="billing-information__label"
+                                 for="zip-code">
+                                 Zip Code
+                              </label>
+                              <input class="billing-information__input"
+                                 type="number" placeholder="Zip Code"
+                                 name="form[]" autocomplete="off"
+                                 id="zip-code" required>
+                           </div>
+                        </div>
+                        <div class="billing-information__items">
+                           <div class="billing-information__item">
+                              <label class="billing-information__label"
+                                 for="email">
+                                 Email
+                              </label>
+                              <input class="billing-information__input"
+                                 type="email" placeholder="Email Address"
+                                 name="form[]" autocomplete="on"
+                                 id="email" required>
+                           </div>
+                           <div class="billing-information__item">
+                              <label class="billing-information__label"
+                                 for="phone">
+                                 Phone
+                              </label>
+                              <input class="billing-information__input"
+                                 type="tel" placeholder="Phone number"
+                                 name="form[]" autocomplete="off"
+                                 id="phone" required>
+                           </div>
+                        </div>
+                        <div class="billing-information__items">
+                           <label class="billing-information__item">
+                              <input
+                                 class="billing-information__input billing-information__input--checkbox"
+                                 name="form[]" type="checkbox" required>
+                              <span
+                                 class="billing-information__label billing-information__label--checkbox">
+                                 Ship to a different address
+                              </span>
+                           </label>
+                        </div>
+
+                        <div class="additional-info">
+                           <h2 class="additional-info__title title">
+                              Additional Info
+                           </h2>
+                           <label class="additional-info__label"
+                              for="order-notes">Order Notes
+                              (Optional)</label>
+                           <textarea class="additional-info__textarea"
+                              name="form[]" id="order-notes"
+                              placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                        </div>
+                     </div>
+                     <div class="order-summery">
+                        <h2 class="order-summery__title title">
+                           Order Summery
+                        </h2>
+                        <div class="order-summery__top">
+                           <div class="order-summery__items">
+                              <div class="order-summery__item">
+                                 <div class="order-summery__left">
+                                    <a href="#" class="order-summery__name">
+                                       <div class="order-summery__image">
+                                          <img class="order-summery__img"
+                                             src="img/green-capsicum.webp"
+                                             alt="green-capsicum">
+                                       </div>
+                                       <div>
+                                          Green Capsicum
+                                          <span> x5</span>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="order-summery__price">$70.00</div>
+                              </div>
+                              <div class="order-summery__item">
+                                 <div class="order-summery__left">
+                                    <a href="#" class="order-summery__name">
+                                       <div class="order-summery__image">
+                                          <img class="order-summery__img"
+                                             src="img/red-capsicum.webp"
+                                             alt="red-capsicum">
+                                       </div>
+                                       <div>
+                                          Red Capsicum
+                                          <span> x1</span>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="order-summery__price">$14.00</div>
+                              </div>
+                           </div>
+                           <div class="order-summery__total">
+                              <div class="order-summery__name-total">Subtotal:
+                                 <span>$84.00</span>
+                              </div>
+                              <div class="order-summery__name-total">Shipping:
+                                 <span>Free</span>
+                              </div>
+                              <div class="order-summery__name-total">Total:
+                                 <span>$84.00</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div
+                           class="order-summery__payment-method payment-method">
+                           <h3 class="payment-method__title title">
+                              Payment Method
+                           </h3>
+                           <div class="payment-method__items">
+                              <label class="payment-method__item">
+                                 <input class="payment-method__input"
+                                    type="radio" name="form[item]" checked>
+                                 <span class="payment-method__label">
+                                    Cash on Delivery
+                                 </span>
+                              </label>
+                           </div>
+                           <div class="payment-method__items">
+                              <label class="payment-method__item">
+                                 <input class="payment-method__input"
+                                    type="radio" name="form[item]">
+                                 <span class="payment-method__label">
+                                    Paypal
+                                 </span>
+                              </label>
+                           </div>
+                           <div class="payment-method__items">
+                              <label class="payment-method__item">
+                                 <input class="payment-method__input"
+                                    type="radio" name="form[item]">
+                                 <span class="payment-method__label">
+                                    Amazon Pay
+                                 </span>
+                              </label>
+                           </div>
+                        </div>
+                        <button class="order-summery__button"
+                           type="submit">Place Order</button>
+                     </div>
+
+                  </form>
+               </div>
+            </section>
+         </main>
+         <footer class="footer">
+            footer
+         </footer>
+      </div>
+   </body>
+</html>
