@@ -1,0 +1,125 @@
+@use "sass:math";
+
+@media (any-hover: hover) and (any-pointer: fine) {
+   .featured__link {
+      position: relative;
+   }
+   .featured__link::before {
+      content: " ";
+      position: absolute;
+      height: 2px;
+      width: 0px;
+      background-color: #2c742f;
+      bottom: -3px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: width 0.5s;
+   }
+
+   .featured__link:hover::before {
+      width: 100%;
+   }
+
+   .featured__link:hover {
+      color: #2c742f;
+   }
+
+   .featured__link:hover path {
+      stroke: #2c742f;
+   }
+
+   .featured__item:hover::before {
+      opacity: 1;
+   }
+
+   .featured__item:hover .featured__name {
+      color: #00b207;
+   }
+
+   .featured__item:hover .featured__name:hover {
+      color: #2c742f;
+   }
+
+   .featured__item:hover .featured__click {
+      visibility: visible;
+   }
+
+   .featured__click {
+      visibility: hidden;
+   }
+
+   .featured__item:hover .featured__click a:hover path {
+      stroke: #fff;
+   }
+
+   .featured__item:hover .featured__click a:hover {
+      background-color: #00b207;
+   }
+
+   .featured__item:hover .featured__bag {
+      background-color: #00b207;
+   }
+
+   .featured__item:hover .featured__bag path {
+      stroke: #fff;
+   }
+
+   .featured__item:hover .featured__bag:hover {
+      background-color: #2c742f;
+   }
+
+   .featured__rating:hover path {
+      fill: #cccccc;
+   }
+
+   .featured__rating:hover path {
+      stroke: #ff8a00;
+   }
+
+   .featured__rating:hover ~ .featured__rating path {
+      fill: #cccccc;
+   }
+
+   .featured__rating:active path {
+      fill: #ff8a00;
+   }
+
+   .featured__ratings {
+      font-size: 0px;
+   }
+
+   .featured__item:hover .featured__image img {
+      transform: scale(1.08);
+   }
+
+   .news__link {
+      position: relative;
+   }
+   .news__link::after {
+      content: " ";
+      position: absolute;
+      height: 2px;
+      width: 0px;
+      background-color: rgba(44, 116, 47, 0.2);
+      bottom: -3px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: width 0.5s;
+   }
+
+   .news__link:hover::after {
+      width: 100%;
+   }
+
+   .news__clickable-text:hover {
+      color: #2c742f;
+   }
+
+   .news__button:hover {
+      color: #2c742f;
+   }
+
+   .news__button:hover path {
+      stroke: #2c742f;
+   }
+}
