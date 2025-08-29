@@ -1,0 +1,236 @@
+@use "sass:math";
+@use "_reset.scss";
+@use "_fonts.scss";
+@use "_mixins.scss" as *;
+@use "_hover.scss";
+
+.wrapper {
+   min-height: 100%;
+   overflow: clip;
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper > main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   max-width: toRem($containerWidth);
+   padding-inline: toRem(math.div($containerPadding, 2));
+   margin: 0 auto;
+}
+
+//  ~ ВАЖНО
+
+//  Стилі для пристроїв, що не підтримують наведення курсора
+// @media (any-hover: hover) {
+// }
+// @media (any-hover: hover) and (any-pointer: fine) {
+// }
+//  Основні медіа запити
+// @media (max-width: 74.9988em) {
+// }
+//  1199.98px
+// @media (max-width: 61.9988em) {
+// }
+//  991.98px
+// @media (max-width: 47.9988em) {
+// }
+//  767.98px
+// @media (max-width: 29.9988em) {
+// }
+//  479.98px
+body {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 500;
+}
+
+.header {
+   padding-top: 28px;
+   padding-bottom: 25px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #fff;
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+   }
+
+   &__nav {
+   }
+
+   &__list {
+   }
+
+   &__button {
+      line-height: 1.5;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      background: #f26522;
+      color: #fff;
+      padding: 8px 30px;
+      border-radius: 99px;
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      transition: background 0.5s;
+      &::after {
+         content: " ";
+         background: url("../img/arrow.svg") no-repeat;
+         height: 16px;
+         flex: 0 0 20px;
+      }
+      &--burger {
+         display: none;
+      }
+   }
+   &__buttons {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+   }
+}
+.text {
+   margin-top: 100px;
+}
+.logo {
+   display: inline-flex;
+   align-items: center;
+   gap: 6px;
+   flex: 0 0 211px;
+
+   &__icon {
+      overflow: hidden;
+      object-fit: cover;
+   }
+
+   &__name {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.5;
+      text-transform: uppercase;
+   }
+}
+.list-header {
+   font-weight: 500;
+   font-size: 13px;
+   line-height: 1.5;
+   text-transform: uppercase;
+   display: flex;
+   column-gap: 30px;
+   row-gap: 10px;
+   flex-wrap: wrap;
+   &__item {
+   }
+
+   &__link {
+   }
+}
+
+.burger {
+   display: none;
+   width: 30px;
+   height: 18px;
+   position: relative;
+   &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s;
+      background-color: #000;
+      top: 0;
+   }
+   &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s;
+      background-color: #000;
+      bottom: 0;
+   }
+   & span {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s;
+      background-color: #000;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+}
+.burger.active span {
+   width: 0;
+}
+.burger.active::before {
+   top: 50%;
+
+   transform: rotate(-45deg) translateY(-2px);
+}
+.burger.active::after {
+   bottom: 50%;
+   transform: rotate(45deg) translateY(2px);
+}
+
+@media (max-width: 952.98px) {
+   .burger {
+      display: block;
+   }
+
+   .header__nav {
+      display: block;
+      position: fixed;
+      top: 98px;
+      right: -100%;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      transition: right 0.3s ease;
+   }
+   .header__nav.active {
+      right: 0;
+   }
+   body.lock {
+      overflow: hidden;
+   }
+   .logo {
+      position: relative;
+
+      z-index: 50;
+   }
+   .list-header {
+      display: block;
+      font-size: 20px;
+      padding-left: 20px;
+      & li:not(:last-child) {
+         margin-bottom: 10px;
+      }
+   }
+}
+@media (max-width: 499.98px) {
+   .logo {
+      flex: 0 0 auto;
+   }
+   .header__button {
+      display: none;
+   }
+   .list-header:not(:last-child) {
+      margin-bottom: 10px;
+   }
+   .header__button--burger {
+      display: flex;
+      justify-content: center;
+      &:not(:last-child) {
+         margin-bottom: 10px;
+      }
+   }
+}
